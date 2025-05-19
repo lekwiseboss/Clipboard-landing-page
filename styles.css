@@ -1,0 +1,417 @@
+:root {
+  --head-color: hsl(210, 10%, 33%);
+  --padding: 1rem;
+  --font-size: 16px;
+  --text-color:hsl(214, 8%, 63%);
+  --background-image: url('/images/bg-header-mobile.png');
+  --background-image-footer: url('/images/bg-footer-mobile.png');
+}
+html{
+
+  font-size: px;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Bai Jamjuree",sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffff;
+  text-align: center;
+  font-size: 16px;
+}
+h1,h2,h3,h4{
+  color: var(--head-color);
+}
+
+
+
+.header-content{
+  background-image: url('/images/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  padding-top: 4rem;  /* Adjust as needed */
+  padding-bottom: 4rem; /* Adjust as needed */
+}
+.header-content h2{
+  font-size:2.1rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+color: var(--head-color);
+  width: 90%;
+  text-align: center;
+  margin: 3rem auto;
+  
+  
+}
+.logo-img1{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* Optional: ensures it fits nicely if inside a container */
+  padding: 0;
+
+
+  height:20%; /* Automatically adjusts height based on image ratio */
+
+}
+.details{
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-color);
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.8;
+  margin: 0 auto 2rem;
+}
+
+button {
+  width: 400px;
+  margin: 2rem auto;
+  height:4rem;
+  
+  
+display:block;
+ color: #fff;
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 550;
+  border-radius: 45px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+}
+.btn1{
+  border:solid 1px hsl(171, 66%, 44%);
+
+  background-color:  hsl(171, 66%, 44%);
+ box-shadow: 0 5px 2px hsl(171, 66%, 44%);
+  
+}
+.btn1:hover{
+  box-shadow:  0 6px 3px hsl(171, 66%, 44%) ;
+}
+.btn2:hover{
+ box-shadow: 0 6px 3px  hsl(233, 100%, 69%);
+
+}
+.btn2{
+  background-color:  hsl(233, 100%, 69%);
+  border:solid 1px hsl(233, 100%, 69%);
+ box-shadow: 0 5px 2px  hsl(233, 100%, 69%);
+  
+}
+
+
+.features1{
+  width: 100%;
+  margin: 5rem auto 7rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.features1 h2{
+  width: 60%;
+  margin: 1rem auto;
+  color: var(--head-color);
+  padding: 0;
+  text-align: center;
+}
+.feature-main h2{
+ font-size: 1.5rem;
+}
+.feature{
+  margin-top: 0rem;
+}
+.main img{
+width: 80%;
+}
+.feature-main img{
+  width: 400px;
+}
+.features2{
+
+  width: 100%;
+  margin: 5rem auto 7rem;
+  padding: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* Add to styles.css */
+.icons-box img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+.icons-box img:last-child {
+  margin-right: 0;
+}
+.logo-box img{
+  width: 80px;
+  height: auto;
+  margin:20px auto;
+  vertical-align: middle;
+}
+.sub-feature2{
+  display: block;
+}
+
+.device-spec{
+  margin: 150px auto;
+}
+footer {
+  background-color: hsl(0, 6%, 97%);
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo-img {
+  width: 4em;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-nav a {
+  color: var(--text-color, #888);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.footer-icon svg {
+  color: #6c757d;
+  transition: color 0.3s;
+  width: 25px;
+  height: 25px;
+}
+
+.footer-icon:hover svg {
+  color: hsl(171, 66%, 44%);
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+
+  }
+  .icons-box{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .logo-box{
+    display: flex;
+    flex-direction: column;
+      gap: 32px;
+    justify-content: center;
+  }
+  footer{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-y: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+  .icons-box{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .logo-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo-box img{
+    margin-right:40px
+  }
+  .features1{
+    display: grid;
+    width: 100%;
+    gap:1px;
+    grid-template-areas:
+    ' feature-main feature-main feature-main feature-main '
+   ' image image feature-1 feature-1'
+    'image image feature-2 feature-2'
+   ' image image feature-3 feature-3'
+   
+
+  }
+  .feature-main{
+    grid-area: feature-main;
+  }
+  .feature-1{
+    grid-area: feature-1;
+  }
+  .feature-2{
+    grid-area: feature-2;
+  }
+  .feature-3{
+    grid-area: feature-3;
+  }
+  .image{
+    grid-area: image;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  
+    padding: 0px;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-y: none;
+  }
+
+  .footer-logo{
+    width: 20%;
+    margin: 10px;
+  align-self:flex-end ;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    flex-wrap: nowrap;
+  
+  }
+  .footer-nav{
+    width: 1vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 0;
+
+     }   }
+    
+    
+    @media screen and (min-width: 768px) {
+      footer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0;
+        background-color: hsl(0, 6%, 97%);
+      }
+    
+      .footer-logo-main {
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 2rem;
+      }
+    
+      .footer-nav {
+        width: 60%;
+        max-width: 30%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: ;
+        justify-content: ;
+        align-items: flex-start;
+        
+      }
+    
+      .footer-nav > h3 {
+        margin: 1em 2em;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    
+      .footer-social {
+        display: flex;
+        flex-direction: row;
+        
+        margin-top: 2rem;
+        margin-left: 1em;
+      }
+    
+    .footer-logo-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img2 {
+  width: 20px;      /* or whatever size you want */
+  height: auto;    /* maintain aspect ratio */
+  display: block;
+  margin: 0 auto;  /* center horizontally if needed */
+}
+
+  
+
+.my-image{
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+
+  align-items: center;
+  object-fit: contain; /* Optional: ensures it fits nicely if inside a container */
+}
+
+}
